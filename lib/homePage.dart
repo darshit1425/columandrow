@@ -13,8 +13,102 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("chass board",),
+          backgroundColor: Colors.greenAccent,
+          title: Text("Chess",style: TextStyle(fontSize: 25,color: Colors.black),),
           centerTitle: true,
+        ),
+        body: Column(
+          // crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Expanded(
+              child: Expanded(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.black,
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Expanded(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(
+                    child: Expanded(
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
